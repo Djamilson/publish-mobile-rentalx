@@ -1,11 +1,22 @@
 {
+  "name": "rentalx",
   "expo": {
     "name": "rentalx",
     "slug": "rentalx",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "bundleIdentifier": "com.rentalx",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.rentalx",
+      "versionCode": 1
+    },
+    "plugins": []
   },
-  "name": "rentalx"
+  "splash": {
+    "image": "./assets/splash.png",
+    "backgroundColor": "#1B1B1F"
+  }
 }

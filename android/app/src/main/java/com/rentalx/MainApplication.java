@@ -28,6 +28,8 @@ import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Nullable;
 
+import com.microsoft.codepush.react.CodePush;
+
 public class MainApplication extends Application implements ReactApplication {
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
     new BasePackageList().getPackageList()
@@ -39,10 +41,23 @@ public class MainApplication extends Application implements ReactApplication {
       return BuildConfig.DEBUG;
     }
 
+     //add
+    /*@Override
+    protected String getJSBundleFile() {
+      return CodePush.getJSBundleFile();
+    }*/
+
     @Override
     protected List<ReactPackage> getPackages() {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
+
+      //add
+      //packages.add(new CodePush(BuildConfig.CodePushDeploymentKey, getApplicationContext(), BuildConfig.DEBUG, BuildConfig.CodePushDeploymentKey));
+
+      //packages.add(new CodePush(BuildConfig.CodePushDeploymentKey, getApplicationContext(), BuildConfig.DEBUG));
+
+
       return packages;
     }
 
