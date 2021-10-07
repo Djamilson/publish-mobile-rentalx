@@ -10,6 +10,14 @@ plugins {
 
 buildscript {
     ext {
+
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.3"
+    minSdkVersion = 23
+    targetSdkVersion = 30
+    ndkVersion = "20.1.5948944"
+
+/*
         ndkVersion = "20.1.5948944"
         buildToolsVersion = "30.0.2"
 
@@ -20,8 +28,9 @@ buildscript {
         //compileSdkVersion = 30
         compileSdkVersion = 31
 
-        //targetSdkVersion = 30
-        targetSdkVersion = 31
+        targetSdkVersion = 30
+        //targetSdkVersion = 31
+        */
 
     }
     repositories {
