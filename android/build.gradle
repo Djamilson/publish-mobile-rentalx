@@ -13,8 +13,8 @@ buildscript {
         buildToolsVersion = "30.0.2"
 
         //buildToolsVersion = "29.0.3"
-        minSdkVersion = 21
-        //minSdkVersion = 30
+        //minSdkVersion = 21
+        minSdkVersion = 30
 
         compileSdkVersion = 30
         //compileSdkVersion = 31
